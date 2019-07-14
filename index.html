@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body background="imagens/backgroundSVG.svg" id="fd">
+    <script src="index.js"></script>
+    <div id="fundo">
+        <div id="menu">
+            <div id="links">
+                <a href="loja.html">LOJA</a></span>
+                <a href="">CONTATO</a></span>
+                <a href="">JOGOS</a></span>
+                <a id="entra_butao" href="">ENTRA</a></span>
+            </div>
+        </div>
+        <div id="fundo_cadastro">
+            <img id="logo" src="imagens/basqueteLOGO.png">
+            <div id="cadastro">
+                <form class="forms">
+                    <label class="input-label" for="nome">Nome</label>
+                    <input class="fields" type="text" name="nome" id="nome"><br>
+                    <label class="input-label" for="email">E-mail</label>
+                    <input class="fields" type="email" name="email" id="email"><br>
+                    <label class="input-label" for="cpf">CPF</label>
+                    <input class="fields" type="text" name="cpf" id="cpf"><br>
+                    <label class="input-label" for="senha">Senha</label>
+                    <input class="fields" type="password" name="senha" id="senha" placeholder="Min. 5 characteres"><br>
+                    <label class="input-label" for="resenha">Re-Senha</label>
+                    <input class="fields" type="password" name="resenha" id="resenha" placeholder="Min. 5 characteres"><br>
+                    <div class="buttons">
+                        <button class="button register" type="submit" onclick="validacao()">Criar sua conta</button>
+                        <button class="button login" onclick="Login()">Entre</button>
+                    </div>
+                    <p id="error"> </p>
+                </form>
+            </div>
+        </div>
+        <div id="fundo_texto">
+            <h2 class="texto1">JACK TE CONVIDA</h2>
+            <h2 class="texto2">PARA CONHECER O SITE</h2>
+            <h2 class="texto1">DE BASQUETE DA FACISA</h2>
+        </div>
+    </div>
+</body>
+
+</html>
