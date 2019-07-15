@@ -101,7 +101,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 a { 
@@ -173,7 +173,8 @@ h2 {
 #fundo_carrinho {
     background-color: white;
     padding: -10px;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 h1 {
@@ -182,6 +183,7 @@ h1 {
 
 #error {
     color: red;
+    margin-top: 5px;
 }
 
 #carrinho {
@@ -232,6 +234,7 @@ hr {
     height: 30px;
     margin-bottom: 10px;
     margin-top: 10px;
+    border: 1px solid grey
 }
 
 .input-label{
@@ -279,13 +282,15 @@ hr {
 }
 
 .price .carrinho_branco {
-    padding-left: 50%;
+    padding-left: 25%;
     margin-top: 5px;
 }
 
 .price label {
     font-weight: 700;
     color: white;
-    font-size: 22px;
+    font-size: 21px;
     z-index: 999;
+    margin-right: 5%;
+    margin-left: 5%;
 }
