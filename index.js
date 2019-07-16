@@ -1,30 +1,45 @@
 function validacao() {
-    var dados = document.getElementsByClassName("fields");
-    var senha1 = dados[3].value;
-    var senha2 = dados[4].value;
-    var vazio = false;
+    var nome = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+    var senha = document.getElementById("senha").value;
+    var re_senha = document.getElementById("re-senha").value;
+    var cpf = document.getElementById("cpf").value;
+    var errors = 0;
 
-    for (let i = 0; i < dados.length; i++) {
-        if (!dados[i]) {
-            document.getElementsById("error").innerHTML = "preencher todos os campo para concluir!";
-            document.getElementsById(dados[i].getElementsById).style.border="1px solid red";
-            vazio = true;
-        }
+    if (!nome) {
+        document.getElementById("nome").style.border="1px solid red";
+        errors++;
+    }
+    if (!email) {
+        document.getElementById("email").style.border="1px solid red";
+        errors++;
+    }
+    if (!cpf) {
+        document.getElementById("cpf").style.border="1px solid red";
+        errors++;
+    }
+    if (!senha) {
+        document.getElementById("senha").style.border="1px solid red";
+        errors++;
+    }
+    if (!re_senha) {
+        document.getElementById("re-senha").style.border="1px solid red";
+        errors++;
+    }
+    if (senha != re_senha) {
+        document.getElementById("senha").style.border="1px solid red";
+        document.getElementById("re-senha").style.border="1px solid red";
+        errors++;
     }
 
-    if (vazio == false) {
-        if (senha1.lenght < 5 || senha2.lenght < 5) {
-            document.getElementsById("senha").style.border="1px solid red";
-            document.getElementsById("re-senha").style.border="1px solid red";
-            document.getElementsById("error").innerHTML = "Tamanho maximo 5";
-            return false;
-        }
-    
-        if (senha1 != senha2) {
-            document.getElementsById("error").innerHTML = "preencher todos os campo para concluir!";
-            document.getElementsById("senha").style.border="1px solid red";
-            document.getElementsById("re-senha").style.border="1px solid red";
-            return false;
-        }
+    if (senha.lenght < 5 || re-senha.lenght < 5) {
+        document.getElementById("senha").style.border="1px solid red";
+        document.getElementById("re-senha").style.border="1px solid red"
+        errors++;
     }
+
+    if (errors != 0) {
+        document.getElementById("msg").innerHTML = "preencher todos os campos corretamente!!";
+        return false;
+    }    
 }
