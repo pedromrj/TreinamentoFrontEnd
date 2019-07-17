@@ -5,7 +5,7 @@ function validacao() {
     var re_senha = document.getElementById("re-senha").value;
     var cpf = document.getElementById("cpf").value;
     var errors = 0;
-
+    
     if (!nome) {
         document.getElementById("nome").style.border="1px solid red";
         errors++;
@@ -38,8 +38,7 @@ function validacao() {
         errors++;
     }
 
-    if (errors != 0) {
+    if (errors > 0) {
         document.getElementById("msg").innerHTML = "preencher todos os campos corretamente!!";
-        return false;
     }    
 }

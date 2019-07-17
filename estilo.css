@@ -6,14 +6,11 @@
     margin: -10px;
 }
 
-#menu_loja2 {
-    background-image: url('imagens/background.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 195%;
-}
-
 #menu_loja {
-    background-color: rgba(000,000,000, 0.4);
+    background-image: url('imagens/backgroundSVG.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 623%;
+    background-position-y: 35%;
     padding: 50px;
     margin: -10px;
 }
@@ -46,6 +43,12 @@
 
 #fundo_texto {
     margin-top: 200px; 
+}
+
+#user {
+    font-size: 27px;
+    color: white;
+    padding: 58px;
 }
 
 #entra_butao {
@@ -122,9 +125,9 @@ a:hover {
     padding-bottom: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
-    border-bottom:2px solid  #F87F2F;
-    border-right-width: 2px;
+    border-bottom:4px solid #F87F2F;
 }
+
 
 h3 {
     color: #004F9E;
@@ -253,6 +256,7 @@ hr {
     background: lightgrey;
     display:flex;
     width: 100%;
+    margin-bottom: 5%;
 }
 .setor .img-produto{
     width: 100%;
